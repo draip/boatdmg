@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "boatdmg",
+	"version": "${version}",
+	"name": "boatdmg",
+	"description": "mod to track hidden boat wobble amount (damage).",
+	"authors": [
+		"bara"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/boatdmg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bara.boatdmg.Boatdmg"
+		]
+	},
+	"mixins": [
+		"boatdmg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
